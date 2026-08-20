@@ -183,11 +183,16 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.1; le
 }
 .hero-photo-placeholder {
   aspect-ratio: 4/5;
-  background: linear-gradient(0deg, rgba(16,25,43,0.35), rgba(16,25,43,0.05)), url('assets/houston-skyline-opt.webp');
-  background-size: cover;
-  background-position: center 60%;
-  border: 1px solid rgba(255,255,255,0.15);
   border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+.hero-photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
 }
 
 /* ===== RESULTS ===== */
